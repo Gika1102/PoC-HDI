@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--bg-white);
+  color: var(--kyn-dark);
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.global-sidebar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  background-color: var(--kyn-dark);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid var(--kyn-charcoal);
+  z-index: 50;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  padding: 24px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--kyn-red);
+  box-shadow: 0 0 10px var(--kyn-red);
+}
+
+.brand-logo h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+}
+
+.brand-logo span {
+  font-size: 10.5px;
+  color: var(--kyn-sand-gray);
+  display: block;
+}
+
+.sidebar-nav {
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: #A4DDEE;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+}
+
+.nav-link.active {
+  background: var(--kyn-red);
+  color: white;
+  box-shadow: 0 4px 14px rgba(255, 70, 45, 0.35);
+}
+
+.nav-icon {
+  font-size: 16px;
+}
+
+.sidebar-footer {
+  padding: 18px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 11px;
+  color: var(--kyn-sand-gray);
+}
+
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.page-header {
+  background: var(--bg-white);
+  border-bottom: 1px solid var(--kyn-border);
+  padding: 16px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+}
+
+.page-header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--kyn-dark);
+}
+
+.page-header p {
+  font-size: 12px;
+  color: var(--kyn-gray-medium);
+  margin-top: 2px;
+}
+
+.badge-tag {
+  background: var(--kyn-sand-bg);
+  border: 1px solid var(--kyn-border);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--kyn-teal-deep);
+}
