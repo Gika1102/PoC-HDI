@@ -1,0 +1,6 @@
+google-adk
+fastapi
+uvicorn
+pandas
+openpyxl
+python-dotenv
